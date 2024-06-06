@@ -1,0 +1,26 @@
+//9015088066
+public class DrawingApp {
+	private Circle circle;
+
+	public DrawingApp(Circle circle) {
+		super();
+		this.circle = circle;
+	}
+
+	public Circle getCircle() {
+		return circle;
+	}
+
+	public void setCircle(Circle circle) {
+		this.circle = circle;
+	}
+
+	@Override
+	public String toString() {
+		return "DrawingApp [circle=" + circle + "]";
+	}
+
+	public void draw() {
+		System.out.println(circle);
+	}
+}

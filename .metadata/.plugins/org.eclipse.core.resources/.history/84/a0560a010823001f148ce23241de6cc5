@@ -1,0 +1,7 @@
+package com.rahul;
+//Tight Coupling
+public class DrawingApp {
+	private Shape s;
+
+	
+}
