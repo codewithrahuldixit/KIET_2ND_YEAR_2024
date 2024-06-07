@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.rahul.DrawingApp"><rhs name\="com.rahul.DrawingApp"/></lhs><lhs name\="com.rahul.Rectangle"><rhs name\="com.rahul.Rectangle"/></lhs><lhs name\="DrawingApp"><rhs name\="DrawingApp"/></lhs><lhs name\="Rectangle"><rhs name\="Rectangle"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.rahul.DrawingApp"><rhs name\="com.rahul.DrawingApp"/></lhs><lhs name\="com.rahul.Rectangle"><rhs name\="com.rahul.Rectangle"/></lhs><lhs name\="DrawingApp"><rhs name\="DrawingApp"/></lhs><lhs name\="Rectangle"><rhs name\="Rectangle"/></lhs><lhs name\="com.rahul.Circle"><rhs name\="com.rahul.Circle"/></lhs></history>
 content_assist_number_of_computers=15
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0

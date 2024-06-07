@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.rahul.DrawingApp"/>
     <fullyQualifiedTypeName name="com.rahul.Rectangle"/>
     <fullyQualifiedTypeName name="DrawingApp"/>
     <fullyQualifiedTypeName name="Rectangle"/>
+    <fullyQualifiedTypeName name="com.rahul.Circle"/>
+    <fullyQualifiedTypeName name="com.rahul.DrawingApp"/>
 </qualifiedTypeNameHistroy>
