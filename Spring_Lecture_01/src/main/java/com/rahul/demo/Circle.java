@@ -1,5 +1,8 @@
 package com.rahul.demo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Circle implements Shape {
 	private int radius;
 

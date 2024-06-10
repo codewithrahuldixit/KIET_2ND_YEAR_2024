@@ -2,8 +2,9 @@ package com.rahul.demo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-@Configuration
+import org.springframework.context.annotation.Primary;
+/*
+//@Configuration
 public class SpringInjectionDemo {
 	
 	@Bean("bean1")
@@ -14,13 +15,6 @@ public class SpringInjectionDemo {
 	public int getId() {
 		return 12345;
 	}
-	@Bean("circle")
-	public Circle getCircle() {
-		return new Circle(40);
-	}
-	@Bean("rectangle")
-	public Rectangle getRectangle() {
-		return new Rectangle(10,20);
-	}
+	
 
-}
+}*/

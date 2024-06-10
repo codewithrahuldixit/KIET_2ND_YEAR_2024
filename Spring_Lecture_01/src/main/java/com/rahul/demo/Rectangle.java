@@ -1,5 +1,10 @@
 package com.rahul.demo;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class Rectangle implements Shape{
 	private int length;
 	private int breath;
