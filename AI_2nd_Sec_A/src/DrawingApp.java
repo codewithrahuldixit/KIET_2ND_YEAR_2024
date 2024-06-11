@@ -1,12 +1,12 @@
 
 public class DrawingApp {
-private Circle circle;
+private Shape shape;
 
-public DrawingApp(Circle circle) {
+public DrawingApp(Shape shape) {
 	super();
-	this.circle = circle;
+	this.shape = shape;
 }
 public void draw() {
-	System.out.println(circle);
+	System.out.println(shape);
 }
 }
