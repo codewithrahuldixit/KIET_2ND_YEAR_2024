@@ -12,8 +12,9 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
     <fullyQualifiedTypeName name="java.awt.Rectangle"/>
+    <fullyQualifiedTypeName name="com.rahul.demo.ConfigurationDemo"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
-    <fullyQualifiedTypeName name="com.rahul.demo.ConfigurationDemo"/>
+    <fullyQualifiedTypeName name="com.rahul.ConfigurationDemo"/>
 </qualifiedTypeNameHistroy>
