@@ -1,10 +1,12 @@
 package com.rahul.demo;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
 @Primary
+@Lazy
 public class Rectangle implements Shape{
 	private int length;
 	private int breath;
@@ -12,6 +14,7 @@ public class Rectangle implements Shape{
 	public Rectangle() {
 		super();
 		// TODO Auto-generated constructor stub
+		System.out.println("Rectangle created");
 	}
 
 	public Rectangle(int length, int breath) {

@@ -1,5 +1,10 @@
 package com.rahul.demo;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("rectangle")
 public class Rectangle implements Shape{
 	private int length;
 	private int breath;

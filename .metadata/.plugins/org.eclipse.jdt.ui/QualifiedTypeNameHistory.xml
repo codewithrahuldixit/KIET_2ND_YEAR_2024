@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.rahul.Rectangle"/>
     <fullyQualifiedTypeName name="DrawingApp"/>
     <fullyQualifiedTypeName name="Rectangle"/>
     <fullyQualifiedTypeName name="com.rahul.Circle"/>
-    <fullyQualifiedTypeName name="com.rahul.DrawingApp"/>
     <fullyQualifiedTypeName name="com.rahul.demo.SpringInjectionDemo"/>
     <fullyQualifiedTypeName name="com.rahul.demo.Rectangle"/>
     <fullyQualifiedTypeName name="com.rahul.demo.Shape"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
     <fullyQualifiedTypeName name="java.awt.Rectangle"/>
     <fullyQualifiedTypeName name="com.rahul.demo.ConfigurationDemo"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="com.rahul.ConfigurationDemo"/>
+    <fullyQualifiedTypeName name="com.rahul.demo.DrawingApp"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
+    <fullyQualifiedTypeName name="com.rahul.Rectangle"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
+    <fullyQualifiedTypeName name="com.rahul.DrawingApp"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 </qualifiedTypeNameHistroy>
