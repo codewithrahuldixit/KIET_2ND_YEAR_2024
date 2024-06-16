@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DrawingApp {
 	@Autowired
-	@Qualifier("rect")
+	@Qualifier("square")
 	private Shape shape;
 	/*
 	 * public DrawingApp(Shape shape) { super(); this.shape = shape; }

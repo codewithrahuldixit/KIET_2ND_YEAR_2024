@@ -1,10 +1,12 @@
 package com.rahul.demo;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
 @Qualifier("rect")
+@Lazy
 public class Rectangle implements Shape {
 	private int length;
 	private int breath;
@@ -12,6 +14,7 @@ public class Rectangle implements Shape {
 	public Rectangle() {
 		super();
 		// TODO Auto-generated constructor stub
+		System.out.println("Rectangl is Created");
 	}
 
 	public Rectangle(int length, int breath) {

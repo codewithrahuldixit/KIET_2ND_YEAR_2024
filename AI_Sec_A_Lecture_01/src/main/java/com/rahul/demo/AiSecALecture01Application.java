@@ -29,7 +29,9 @@ public class AiSecALecture01Application {
 	//System.out.println(context.getBean(Shape.class));
 		DrawingApp d1 = context.getBean(DrawingApp.class);
 		d1.draw();
-	
+		System.out.println(context.getBean("circle").hashCode());
+		System.out.println(context.getBean("circle").hashCode());
+		System.out.println(context.getBean("circle").hashCode());
 	}
 
 }
