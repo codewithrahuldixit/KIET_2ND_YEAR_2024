@@ -27,7 +27,10 @@ public class AimlSecALecture01Application {
 				(AimlSecALecture01Application.class);
 		//System.out.println(context.getBean("circle"));
 		//System.out.println(context.getBean("rectangle"));
-		//System.out.println(context.getBean(Circle.class));
+		System.out.println(context.getBean(Circle.class).hashCode());
+		System.out.println(context.getBean(Circle.class).hashCode());
+		System.out.println(context.getBean(Circle.class).hashCode());
+		System.out.println(context.getBean(Circle.class).hashCode());
 		//System.out.println(context.getBean(Shape.class));
 		DrawingApp d1 = context.getBean(DrawingApp.class);
 		d1.draw();
