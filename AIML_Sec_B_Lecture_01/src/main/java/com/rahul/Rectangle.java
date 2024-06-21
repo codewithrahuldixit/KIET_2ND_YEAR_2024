@@ -1,16 +1,22 @@
 package com.rahul;
 
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Primary
+@Lazy
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Rectangle implements Shape {
 	int length;
 	int breath;
 
 	public Rectangle() {
 		super();
+		System.out.println("Rectangle Object Created");
 		// TODO Auto-generated constructor stub
 	}
 

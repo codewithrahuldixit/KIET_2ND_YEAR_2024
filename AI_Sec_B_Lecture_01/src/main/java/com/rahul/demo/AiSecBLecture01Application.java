@@ -27,10 +27,14 @@ public class AiSecBLecture01Application {
 		//System.out.println(context.getBean("name"));
 		//System.out.println(context.getBean("circle"));
 		//System.out.println(context.getBean(Circle.class));
-		//System.out.println(context.getBean(Rectangle.class));
+		System.out.println(context.getBean(Rectangle.class).hashCode());
+		System.out.println(context.getBean(Rectangle.class).hashCode());
+		System.out.println(context.getBean(Rectangle.class).hashCode());
+		System.out.println(context.getBean(Rectangle.class).hashCode());
+		System.out.println(context.getBean(Rectangle.class).hashCode());
 		//System.out.println(context.getBean(Shape.class));
-		DrawingApp d1 = context.getBean(DrawingApp.class);
-		d1.print();
+		//DrawingApp d1 = context.getBean(DrawingApp.class);
+		//d1.print();
 	}
 
 }

@@ -15,6 +15,11 @@ public class SpringLecture01Application {
 	var context = 
 			new AnnotationConfigApplicationContext(SpringLecture01Application.class);
 	//System.out.println(context.getBean("bean1"));
+	System.out.println(context.getBean(Circle.class).hashCode());
+	System.out.println(context.getBean(Circle.class).hashCode());
+	System.out.println(context.getBean(Circle.class).hashCode());
+	System.out.println(context.getBean(Circle.class).hashCode());
+	System.out.println(context.getBean(Circle.class).hashCode());
 	DrawingApp d1 = context.getBean(DrawingApp.class);
 	d1.draw();
 	}

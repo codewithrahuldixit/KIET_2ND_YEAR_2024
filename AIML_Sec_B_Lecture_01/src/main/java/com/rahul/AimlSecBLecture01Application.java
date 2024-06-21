@@ -29,6 +29,10 @@ public class AimlSecBLecture01Application {
 	//System.out.println(context.getBean(Shape.class));
 	DrawingApp d=  context.getBean(DrawingApp.class);
 	d.draw();
+	System.out.println(context.getBean(Shape.class).hashCode());
+	System.out.println(context.getBean(Shape.class).hashCode());
+	System.out.println(context.getBean(Shape.class).hashCode());
+	System.out.println(context.getBean(Shape.class).hashCode());
 	}
 
 }

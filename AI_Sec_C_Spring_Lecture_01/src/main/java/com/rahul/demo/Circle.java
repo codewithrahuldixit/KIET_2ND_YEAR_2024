@@ -1,12 +1,15 @@
 package com.rahul.demo;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Qualifier("circle")
 @Lazy
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Circle implements Shape {
 	private int radius;
 
