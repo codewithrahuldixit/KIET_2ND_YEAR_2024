@@ -18,4 +18,14 @@ public class StudentService {
 		return repo.findAll();
 	}
 
+	public void saveStudent(Student student) {
+		repo.save(student);
+		System.out.println(student);
+	}
+
+	public void removeStudent(int id) {
+		repo.deleteById(id);
+		
+	}
+
 }
