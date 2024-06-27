@@ -30,4 +30,9 @@ public class StudentService {
 		
 	}
 
+	public Student getById(int id2) {
+		
+		return repo.findById(id2).get();
+	}
+
 }

@@ -28,10 +28,10 @@
 				<td th:text="${student.name}"></td>
 				<td th:text="${student.contact}"></td>
 				<td>
-					<a th:href="@{addNew}" class="btn btn-primary btn-sm mb-3">
+					<a th:href="@{/updateStudent/{id}(id=${student.id})}" class="btn btn-primary btn-sm mb-3">
 						Update
 					</a>
-					<a th:href="@{addNew}" class="btn btn-danger btn-sm mb-3">
+					<a th:href="@{/deleteStudent/{id}(id=${student.id})}" class="btn btn-danger btn-sm mb-3">
 						Delete
 					</a>
 				</td>

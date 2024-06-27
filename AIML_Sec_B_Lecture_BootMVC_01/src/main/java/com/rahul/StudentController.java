@@ -32,6 +32,15 @@ public class StudentController {
 		mav.addAttribute(student);
 		return "addStudent";
 	}
+	@PostMapping("/save")
+	public String createStudent(@ModelAttribute("student") Student student) {
+		service.saveStudent(student);
+		return "redirect:/";
+	}
+	
+	
+	
+	
 	@GetMapping("/student/{name}")
 	public String getStudent(@PathVariable String name,Model mav) {
 		Student student = new Student(101, name, 9015088066l);
@@ -39,14 +48,18 @@ public class StudentController {
 	return "demo";
 	}
 
-	@PostMapping("/save")
-	public String createStudent(@ModelAttribute("student") Student student) {
-		service.saveStudent(student);
+	
+	
+	@GetMapping("/deleteStudent/{id}")
+	public String deleteStudent(@PathVariable int id) {
+		service.removeStudent(id);
 		return "redirect:/";
 	}
-	
-	@DeleteMapping("/students/{id}")
-	public void deleteStudent(@PathVariable int id) {
-		service.removeStudent(id);
+	@GetMapping("/updateStudent/{id}")
+	public String updateForm(@PathVariable(value = "id") int id,Model mav) {
+		Student student = service.getById(id);
+		mav.addAttribute("student",student);
+		return "addNew";
 	}
+
 }
