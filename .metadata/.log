@@ -3511,3 +3511,60 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:02:35.971
+!MESSAGE Classpath changed for project: AI_Sec_C_Lecture_Boot_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:02:35.972
+!MESSAGE Boot project REMOVED: AI_Sec_C_Lecture_Boot_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:03:06.001
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_Boot_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:03:06.002
+!MESSAGE Boot project ADDED: AIML_Sec_B_Lecture_Boot_01
+
+!ENTRY org.eclipse.jface 2 0 2024-06-27 11:03:51.560
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-06-27 11:03:51.561
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:04:13.881
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_Boot_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:11:12.921
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_BootMVC_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:11:12.924
+!MESSAGE Boot project ADDED: AIML_Sec_B_Lecture_BootMVC_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:11:14.895
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_BootMVC_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:11:16.258
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_BootMVC_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:11:20.333
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_BootMVC_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:14:46.179
+!MESSAGE Classpath changed for project: AIML_Sec_B_Lecture_Boot_01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-27 11:14:46.200
+!MESSAGE Boot project REMOVED: AIML_Sec_B_Lecture_Boot_01
