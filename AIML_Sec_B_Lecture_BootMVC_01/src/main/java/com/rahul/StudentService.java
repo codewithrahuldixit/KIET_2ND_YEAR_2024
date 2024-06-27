@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StudentService {
+	private static int id=200;
 	private StudentRepository repo;
 
 	public StudentService(StudentRepository repo) {
@@ -19,6 +20,7 @@ public class StudentService {
 	}
 
 	public void saveStudent(Student student) {
+		student.setId(++id);
 		repo.save(student);
 		System.out.println(student);
 	}
