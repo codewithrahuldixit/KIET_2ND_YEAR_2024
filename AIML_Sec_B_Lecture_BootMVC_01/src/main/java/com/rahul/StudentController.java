@@ -19,12 +19,18 @@ public class StudentController {
 		this.service = service;
 	}
 
-	@GetMapping("/students")
-	public List<Student> getAllStudent() {
-		return service.retrieveAllStudents();
+	@GetMapping(path = {"/","/students"})
+	public String viewHomePage(Model mav) {
+		List<Student> students =  service.retrieveAllStudents();
+		mav.addAttribute("list_of_students", students);
+		return "index";
 	}
-	
-	
+	@GetMapping("/addNew")
+	public String addNewStudent(Model mav) {
+		Student student = new Student();
+		mav.addAttribute(student);
+		return "addStudent";
+	}
 	@GetMapping("/student/{name}")
 	public String getStudent(@PathVariable String name,Model mav) {
 		Student student = new Student(101, name, 9015088066l);
