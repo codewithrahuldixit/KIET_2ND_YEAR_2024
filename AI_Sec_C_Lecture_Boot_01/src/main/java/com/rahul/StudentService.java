@@ -33,8 +33,11 @@ public class StudentService {
 
 	public void saveStudent(Student student) {
 		// TODO Auto-generated method stub
-		repository.save(student);
-		
+		repository.save(student);		
+	}
+
+	public void removeByid(int id2) {
+		repository.deleteById(id2);		
 	}
 
 }
