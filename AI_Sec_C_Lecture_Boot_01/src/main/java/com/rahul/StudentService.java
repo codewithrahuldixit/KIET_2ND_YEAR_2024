@@ -1,5 +1,7 @@
 package com.rahul;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.rahul.bean.Student;
@@ -22,6 +24,17 @@ public class StudentService {
 	public Student reteriveByID(int id2) {
 		// TODO Auto-generated method stub
 		return repository.findById(id2).get();
+	}
+
+	public List<Student> reteriveAll() {
+		// TODO Auto-generated method stub
+		return repository.findAll();
+	}
+
+	public void saveStudent(Student student) {
+		// TODO Auto-generated method stub
+		repository.save(student);
+		
 	}
 
 }

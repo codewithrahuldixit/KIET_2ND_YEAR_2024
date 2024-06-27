@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rahul.bean.Student;
 
-@RestController
+//@RestController
 public class HelloController {
 
 	@RequestMapping("/hello")
