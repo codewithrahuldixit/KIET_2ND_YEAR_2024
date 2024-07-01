@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
+//@Document
 public class Student {
 	@Id
 	private int id;

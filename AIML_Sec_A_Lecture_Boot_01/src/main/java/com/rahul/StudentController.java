@@ -2,6 +2,7 @@ package com.rahul;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,9 +21,9 @@ public class StudentController {
 		this.service = service;
 	}
 
-	@GetMapping("/student/{name}")
-	public Student getStudent(@PathVariable String name) {
-		return new Student(101, name, 9015088066l);
+	@DeleteMapping("/student/{id}")
+	public void getStudent(@PathVariable int id) {
+		service.deleteStudent(id);
 	}
 	
 	
@@ -36,8 +37,8 @@ public class StudentController {
 	
 	
 	@PostMapping("/student")
-	public Student createStudent(@RequestBody Student student) {
-		return student;
+	public void createStudent(@RequestBody Student student) {
+		service.saveStudent(student);
 	}
 
 }
