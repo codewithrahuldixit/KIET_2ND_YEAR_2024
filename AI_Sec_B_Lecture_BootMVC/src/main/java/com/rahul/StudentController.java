@@ -24,6 +24,15 @@ public class StudentController {
 		this.service = service;
 	}
 
+	@GetMapping(path = {"/","students"})
+	public String indexPage(Model model) {
+		List<Student> students=service.reteriveAll();
+		
+		model.addAttribute("list_of_students",students);
+		return "index";
+		
+	}
+
 	@GetMapping("/students/{id}")
 	public String getStudent(@PathVariable int id,Model model) {
 		Student student = service.reteriveById(id);
@@ -31,11 +40,7 @@ public class StudentController {
 		return "demo";
 	}
 
-	@GetMapping("/students")
-	public List<Student> getStudent() {
-		return service.reteriveAll();
-	}
-
+	
 	@DeleteMapping("/students/{id}")
 	public void deleteStudent(@PathVariable int id) {
 		service.removeById(id);
