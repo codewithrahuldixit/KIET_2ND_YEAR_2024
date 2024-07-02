@@ -33,19 +33,22 @@ public class StudentController {
 		model.addAttribute("student",student);
 		return "addStudent";
 	}
-	@GetMapping("/students/{id}")
-	public String getStudentById(@PathVariable int id,Model model ) {
-		model.addAttribute("student", service.reteriveById(id));
-		return "demo";
-	}
 	@PostMapping("/save")
 	public String storeStudent(@ModelAttribute("student") Student student) {
 		service.saveStudent(student);
 		return "redirect:/";
 	}
-	@DeleteMapping("/students/{id}")
-	public void removeStudentById(@PathVariable int id ) {
+	@GetMapping("/updateStudent/{id}")
+	public String updateStudent(@PathVariable int id,Model model) {
+		Student student = service.reteriveById(id);
+		model.addAttribute("student",student);
+		return "addStudent";
+	}
+	
+	@GetMapping("/deleteStudent/{id}")
+	public String removeStudentById(@PathVariable int id ) {
 		 service.deleteStudentById(id);
+		 return "redirect:/";
 	}
 	
 	
