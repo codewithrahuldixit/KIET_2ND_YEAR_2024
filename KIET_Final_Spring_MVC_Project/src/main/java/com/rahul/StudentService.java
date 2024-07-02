@@ -14,14 +14,23 @@ public class StudentService {
 		this.repository = repository;
 	}
 
-	public Student retireveById(int id) {		
+	public Student retireveById(int id) {
 		return repository.findById(id).get();
 	}
 
 	public List<Student> retireveAll() {
-		
+
 		return repository.findAll();
 	}
 
+	public void saveStudent(Student student) {
+		repository.save(student);
+
+	}
+
+	public void deleteStudent(int id) {
+		repository.deleteById(id);
+
+	}
 
 }

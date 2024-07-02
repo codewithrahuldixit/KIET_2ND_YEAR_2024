@@ -10,9 +10,10 @@
 <body>
 
 	<div class="container" align="center">
-		<a th:href="@{/addNew}">Add Student</a>
+		<a th:href="@{/addNew}" class="btn btn-primary btn-sm mb-3">Add Student</a>
 		<h1>Students Details As Follows</h1>
-		<table>
+		<hr>
+		<table style="width: 80%; border: 1;" class="table">
 			<thead>
 				<th>ID</th>
 				<th>NAME</th>
@@ -24,8 +25,12 @@
 				<td th:text="${stu.name}"></td>
 				<td th:text="${stu.email}"></td>
 				<td>
-					<a th:href="@{/updateStudent}">Update</a>
-					<a th:href="@{/deleteStudent}">Delete</a>
+					<a th:href="@{/updateStudent/{id}(id=${stu.id})}" class="btn btn-primary btn-sm mb-3">
+						Update
+					</a>
+					<a th:href="@{/deleteStudent/{id}(id=${stu.id})}" class="btn btn-danger btn-sm mb-3">
+						Delete
+					</a>
 				</td>
 			</tr>
 
