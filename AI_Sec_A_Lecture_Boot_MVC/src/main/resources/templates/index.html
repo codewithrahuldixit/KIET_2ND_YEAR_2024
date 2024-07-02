@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Student Page</title>
+	
+</head>
+
+<body>
+	<div class="container" align="center">
+		<h2>Student List As Follows</h2>
+		<hr>
+		<br><br>
+		<table style="width: 80%; border: 1;" class="table">
+			<thead>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>CONTACT</th>
+				<th>ACTION</th>
+			</thead>
+			<tr th:each="student:${list_of_students}">
+				<td th:text="${student.id}"></td>
+				<td th:text="${student.name}"></td>
+				<td th:text="${student.contact}"></td>
+				
+			</tr>
+		</table>
+
+
+
+	</div>
+
+
+
+</body>
+
+</html>

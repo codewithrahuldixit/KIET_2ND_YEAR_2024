@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 public class StudentService {
 	private StudentRepository repository;
 
+	//Constructor Injection
 	public StudentService(StudentRepository repository) {
 		super();
 		this.repository = repository;
