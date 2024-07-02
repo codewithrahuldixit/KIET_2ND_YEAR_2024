@@ -14,6 +14,12 @@
 		<h1 th:text="${stu.name}"></h1>
 		<h1 th:text="${stu.email}"></h1>
 	</div>
+	<div th:object="${stu}" class="container" align="center">
+		<h1>Student Details printed using selection Expresion</h1>
+		<h1 th:text="*{id}"></h1>
+		<h1 th:text="*{name}"></h1>
+		<h1 th:text="*{email}"></h1>
+	</div>
 
 </body>
 

@@ -1,5 +1,7 @@
 package com.rahul;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +16,11 @@ public class StudentService {
 
 	public Student retireveById(int id) {		
 		return repository.findById(id).get();
+	}
+
+	public List<Student> retireveAll() {
+		
+		return repository.findAll();
 	}
 
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.thymeleaf.org">
+<meta charset="UTF-8">
+<title>Student Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+</style>
+
+<body>
+
+	<div class="container" align="center">
+		<a th:href="@{/addNew}">Add Student</a>
+		<h1>Students Details As Follows</h1>
+		<table>
+			<thead>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>EMAIL</th>
+				<th>ACTION</th>
+			</thead>
+			<tr th:each="stu:${list_of_Students}">
+				<td th:text="${stu.id}"></td>
+				<td th:text="${stu.name}"></td>
+				<td th:text="${stu.email}"></td>
+				<td>
+					<a th:href="@{/updateStudent}">Update</a>
+					<a th:href="@{/deleteStudent}">Delete</a>
+				</td>
+			</tr>
+
+		</table>
+	</div>
+
+
+</body>
+
+</html>
